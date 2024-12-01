@@ -149,7 +149,7 @@ app.all("*",(req,res,next)=>{
     next(new ExpressError(404,"Page Not Found"));
 })
 app.use((err,req,res,next)=>{
-    let{status=500,message="Some thing went wrong"}=err;   //ye equal to likh ke unik default value set krdi
+    let{status=500,message="Some thing went wrong"}=err;   //ye equal to likh ke unique default value set krdi
     res.status(status).render("listings/error.ejs",{err});
     // res.status(status).send(message);
 })
