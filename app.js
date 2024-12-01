@@ -154,6 +154,6 @@ app.use((err,req,res,next)=>{
     // res.status(status).send(message);
 })
 
-app.listen("8000",()=>{
+app.listen("8000","0.0.0.0", ()=>{
     console.log("Server is listining to port");
 })
