@@ -155,5 +155,5 @@ app.use((err,req,res,next)=>{
 })
 
 app.listen("8000","0.0.0.0", ()=>{
-    console.log("Server is listining to port");
+    console.log("Server is listining to port 8000");
 })
