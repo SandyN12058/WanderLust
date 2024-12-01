@@ -114,7 +114,7 @@ app.use("/",userRouter);
 // Initialize i18next
 i18next
   .use(Backend) // Load translation files
-  .use(middleware.LanguageDetector) // Detect user's language preference
+  .use(middleware.LanguageDetector) // Detect user's language preferences
   .init({
     fallbackLng: "en", // Default language
     backend: {
